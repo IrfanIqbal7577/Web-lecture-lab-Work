@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5rem;
+    background-image: url(/background.jpg);
+    background-size: cover;
+
+}
+#header {
+    height: 10vh;
+    background-color: rgba(128, 128, 128, 0.618);
+}
+
+#main-content {
+    
+    height: 80vh;
+    /* background-color: mediumslateblue; */
+    /* background-image: url(/backgroundcontent.jpg); */
+
+}
+#footer {
+    height: 10vh;
+    /* background-color: tomato; */
+    background-color: rgba(128, 128, 128, 0.618);
+}
+
+#logo {
+    width: 20vw;
+    
+}
+
+#title {
+    width: 50vw;
+    
+}
+
+#title p {
+    cursor: pointer;
+    text-align: center;
+}
+
+#menu {
+    width: 25vw;
+    
+}
+#logoimg {
+    height: 50px;
+    width: 50px;
+    border: radius 50%; ;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+#menu ul{
+    list-style: none;
+    margin-right: 10px;
+    
+}
+
+/* #menu {
+    /* Not displaying the navbar menu items  */
+    /* display: none; */
+    
+/* } */ 
+
+#menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+#menu ul li{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#menu ul li:hover{
+    border-top: 2px solid black;
+}
+
+
+#footer p {
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+}
+
+
+.issb-info {
+    padding-top: 50px;
+}
+.issb-info ol > li {
+    color: black;
+    padding-top: 5px;
+    font-size: 1.5rem;
+    
+}
+
+.issb-info {
+    text-align: center;
+}
+
+.test {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formfirst input[type="button"]{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.618);
+    border-radius: 10px;
+    font-size: 1rem;
+    
+}
+
+.formfirst input[type="button"]:hover{
+    background-color: rgba(77, 76, 76, 0.618);
+    color: white;
+}
+/* .burger-icon p{
+    color: black;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.burger-icon p:after{
+    opacity: 0.4;
+} */
+
+@media only screen and (max-width:600px) {
+    #header{
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    #main-content{
+        height: 45vh;
+    }
+    #footer{
+        height: 10vh;
+    }
+    #menu {
+        width: 100%;
+        background-color: rgba(128, 128, 128, 0.618);
+        color: white;
+        text-align: center;
+    }
+    #menu ul{
+        flex-direction: column;
+        
+
+    }
+    #menu ul li{
+        border-bottom: 0.1px solid rgb(222, 255, 253);
+    }
+     #menu ul li:hover{
+        background-color: rgba(27, 27, 27, 0.618);
+        color: white;
+        border-radius: 5px;
+        border-top: 0;
+        
+    } 
+}
+

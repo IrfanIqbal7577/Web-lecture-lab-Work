@@ -1,0 +1,63 @@
+.attendancePie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+
+}
+.attendancePie .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+
+}
+.attendancePie .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.attendancePie .percent svg circle{ 
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10 ;
+    stroke:black;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.attendancePie .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+.attendancePie .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 88) / 100);
+    stroke: #03a9f4;
+}
+
+.attendancePie .percent .number{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    height:100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    color:#111;
+}
+
+.attendancePie .percent .number h2{
+    font-size: 48px;
+    background:none;
+    
+
+}
+
+.attendancePie .percent .number h2 span{
+    font-size: 24px;
+}

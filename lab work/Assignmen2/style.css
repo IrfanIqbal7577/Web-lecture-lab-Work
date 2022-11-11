@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+   background-color: gray;
+}
+
+/*header styling code*/
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.logo_design{
+    height: auto;
+    width: 60px;
+    padding: 10px 100px;
+
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+.navbar ul li a{
+    color: #fff;
+}
+.navbar ul li .active{
+    background: #2bab0d;
+
+}
+
+
+
+.navbar ul li a:hover{
+    background: #243342;
+}
+
+
+@media screen and (max-width: 1100px){
+    .navbar{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+ ul{
+
+        width: 100%;
+        height: 100vh;
+        background: #34495e;
+        text-align: center;
+     margin: 0;
+     padding: 0;
+
+
+    }
+.navbar ul li{
+    display: block;
+
+    line-height: 30px;
+}
+    .logo_design{
+        height: auto;
+        width: 100px;
+        padding: 10px 100px;
+
+    }
+
+}
+
+
+
+/*content styling code*/
+
+.section-a{
+    font-family: montserrat;
+    background-image: url("./bg_img.jpg");
+    height: 100vh;
+    background-size: cover;
+
+
+
+}
+
+
+.content_Container {
+    height: 350px;
+    width: 500px;
+
+    box-sizing: border-box;
+    margin: 0 auto auto 100px;
+    padding: 40px;
+
+}
+
+.content_Container h1 {
+
+
+    font-family: sans-serif;
+    color: slateblue;
+
+}
+
+.content_Container h3 {
+    margin: 20px 0px;
+    font-family: sans-serif;
+    color: darkslateblue;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize ;
+    padding: 50px;
+}
+.buttons>label{
+    background: #165c7d;
+    color: white;
+    padding: 7px 35px;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.buttons #btn{
+    background: #165c7d;
+
+    padding: 7px 35px;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.buttons #btn a{
+    color: white;
+
+}
+input[type="checkbox"]{
+    display: none;
+}
+ .container {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: none;
+     background: #ffff;
+     width: 400px;
+     padding: 30px;
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+ }
+
+
+#show:checked ~ .container{
+    display: block;
+}
+
+.container .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container form {
+    margin-top: -20px;
+
+}
+
+.container form .data {
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+
+}
+
+form .data label {
+    font-size: 18px;
+}
+
+form .data input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+form .btn {
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+form .btn .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background:  linear-gradient(45deg, red, blue);
+    transition: all 0.4s;
+
+}
+
+form .btn:hover .inner {
+    left: 0;
+}
+
+form .btn button {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+   
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+form .btn button a{
+    color:white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+form .forgrt_password {
+    margin-left: -8px;
+}
+
+form .forgrt_password a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+form .forgrt_password a:hover {
+
+    text-decoration: underline;
+}
+
+form .signup {
+    text-align: center;
+}
+
+form .signup a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+form .signup a:hover {
+    text-decoration: underline;
+}
+
+
+.section-b{
+    background-color: white;
+    text-align: center;
+    padding: 64px 0;
+    color: #383d45;
+
+
+}
+.section-b-container{
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.section-b-container p{
+    margin: 24px 0;
+
+    line-height: 1.4;
+    color: #383d45;
+    font-family: Proxima Nova,Arial,sans-serif;
+
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" ;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    margin: 0 10px 0 10px;
+
+}
+.card-image{
+    grid-area: image;
+    background: url("./card1.jpg");
+    background-size: cover;
+
+}
+.card-text{
+    grid-area: text;
+    margin: 25px;
+
+}
+
+.card-text p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+#try-button{
+    margin: 30px auto;
+    font-size: 20px;
+    padding: 7px 40px;
+    border-radius: 8px;
+    border-color: #165c7d;
+    background-color: #165c7d;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+.section-c{
+    background-color: white;
+    text-align: center;
+    padding: 64px 0;
+    color: #383d45;
+    padding: 50px 40px;
+}
+.section-c-row{
+    display: flex;
+}
+.section-c-col{
+    width: 25%;
+    padding: 0 5px;
+}
+.section-c-col h4{
+    font-size: 18px;
+    color: #25282d;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.section-c-col ul li{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 5px;
+    font-weight: 300;
+}
+
+
+
+#footer{
+    background-color: #24262b;
+    box-sizing: border-box;
+    padding: 70px 50px;
+}
+.row{
+    display: flex;
+
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 5px;
+    font-weight: 300;
+
+    display: block;
+}
+

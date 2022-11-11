@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.showcase {
+  position: relative;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+
+.text {
+  bottom: 210px;
+  left: 0px;
+  position: relative;
+  z-index: 100;
+}
+
+.text h2 {
+  width: 740px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.login {
+  width: 500px;
+  height: 60vh;
+  padding: 60px;
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 25px;
+  background: rgba(239, 239, 239, 0.1);
+}
+
+.login input[type="text"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 250px;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.login input[type="text"]:hover {
+  border: 2px solid rgba(3, 155, 229, 1);
+}
+
+::placeholder {
+  color: white;
+}
+
+.login input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  border: 2px solid rgba(3, 155, 229, 1);
+}

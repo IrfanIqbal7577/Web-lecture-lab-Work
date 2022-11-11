@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+      body{
+          background: cadetblue;
+      }
+    .register {
+    width: 400px;
+    margin: 50px auto 10px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+#regform {
+    margin: 40px;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.name {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 7px;
+    background-color: #ffffff;
+    box-shadow: inset 1px 1px 5px;
+}
+.check{
+    height: 20px;
+    width: 20px;
+    padding-top: 15%;
+}
+
+#submit {
+    width: 100px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+  </style>
+</head>
+<body>
+    <div class="register">
+        <h1>SignUp Here</h1>
+        <form id="regform" method="post">
+            <label>First NAme : </label>
+            <br>
+            <input class="name" name="fname" placeholder="Enter Your Name " type="text">
+            <br><br>
+            <label>Last NAme : </label>
+            <br>
+            <input class="name" name="lname" placeholder="Enter Your Name " type="text">
+            <br><br>
+            <label>Email : </label>
+            <br>
+            <input class="name" name="email" placeholder="Enter Your email " type="email">
+            <br><br>
+            <label>Password : </label>
+            <br>
+            
+            <input class="name" name="password" placeholder="Enter Your password " type="number">
+
+            <br><br>
+            <label for="D_O_B">D_O_B:</label><br>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <input class="check" type="checkbox">Form Fill Correctly ??</input>
+
+            <br><br>
+            <input id="submit" type="button" value="submit">
+
+        </form>
+
+    </div>
+</body>
+</html>

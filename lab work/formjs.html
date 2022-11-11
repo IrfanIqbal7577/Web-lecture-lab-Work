@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function Area_cal(h,w)
+        {
+            Area_cal=w*h
+            return Area_cal
+        }
+    </script>
+</head>
+<body>
+    <form name="formarea" action="">
+
+        Enter the width and height of your rectangle to calculate the size:<br/>
+        Width:<input type="text" name="height" ><br/>
+        Height:<input type="text" name="width" ><br/>
+        <input type="button" value="Submit" onClick="alert(Area_cal(document.formarea.height.value,
+        document.formarea.width.value))"
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.subjNameAndLinks{
+    display: flex;
+    height: 100px;
+    background-color: blue;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.subjName {
+    font-size: 14px;
+   box-sizing: border-box;
+   line-height: 10px;
+   font-family: sans-serif;
+   margin: 0 0 0 100px;
+
+}
+
+.subjLinks{
+    margin-right: 100px;
+}
+
+
+.attendanceAndList{
+    width: 93%;
+    margin:10px auto;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.labDetails{
+    width:50%;
+    
+    border-radius: 10px;
+}
+.classDetails{
+    width:50%;
+  
+    border-radius: 10px;
+}
+.totalClasses{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+}

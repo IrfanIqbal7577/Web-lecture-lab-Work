@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./regiserationForm.css" rel="stylesheet">
+</head>
+<body>
+<div class="register">
+    <h1>SignUp Form</h1>
+    <form id="register" method="post">
+
+        <label>Name : </label>
+        <br>
+        <input autocomplete="off" name="email" placeholder="Enter name " required type="text">
+        <label>Email : </label>
+        <br>
+
+        <input name="email" placeholder="Enter Your email " required type="email">
+        <label>Password : </label>
+        <br>
+        <input autocomplete="off" name="email" placeholder="Enter Your Password " required type="email">
+        <br><br> <label>Confirm Password : </label>
+        <br>
+        <input autocomplete="off" name="email" placeholder="Re-Enter Password " required type="email">
+        <br><br>
+  
+        <label class="container">male
+            <input name="radio" type="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">female
+            <input name="radio" type="radio">
+            <span class="checkmark"></span>
+        </label>
+        <label for="programs">Choose a programes:</label>
+
+        <select id="programs">
+            <option value="volvo">Cs</option>
+            <option value="saab">EE</option>
+        </select>
+        <br><br>
+        <label for="birthday">Birthday:</label>
+        <input id="birthday" name="birthday" type="date">
+        <br><br><br>
+        <label class="container">agree,Terms and condition
+            <input checked="checked" type="checkbox">
+            <span class="checkBox_Style"></span>
+        </label>
+        <button id="submit" type="button" value="submit">SignUp</button>
+
+    </form>
+
+</div>
+</body>
+</html>

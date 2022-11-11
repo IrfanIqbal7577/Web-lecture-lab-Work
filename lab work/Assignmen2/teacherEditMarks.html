@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Common.css">
+    <link rel="stylesheet" href="./subjNameAndLinks.css">
+    <link rel="stylesheet" href="./table.css">
+    <style>
+        body{
+            background-color: burlywood;
+
+        }
+        .marks{
+            text-align: center;
+            
+        }
+        .titleText{
+            height: 50px;
+            background-color: rgb(112, 218, 112);
+            text-align: center;
+            width: 90%;
+            margin: 5px auto;
+            border-radius: 10px;
+           
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2 class="name-tab">Welcome:Tahira Sadaf</h2>
+    <div class="dashboard-menu">
+        <div class="logo">
+            <img src="./DashBoard_logo.jpg" alt="">
+        </div>
+        <div class="title">
+            <h2>NoiseGenix</h2>
+        </div>
+        <div class="dashboard-links">
+            <ul class="links">
+                <li ><div class="home active">
+                    <img src="./home.jpg" alt="" width="30px" height="30px" >
+                    <a href="./TeacherDashboard.html">dashboard</a>
+                </div></li>
+              
+                <li><div class="home">
+                    <img src="./profile.jpg" alt="" width="30px" height="30px" >
+                    <a href="./teacherProfile.html">Profile</a>
+                </div></li>
+                <li><div class="home">
+                    <img src="./logout.png" alt="" width="30px" height="30px" >
+                    <a href="">Logout</a>
+                </div></li>
+             
+            </ul>
+        </div>
+    </div>
+    <div class="subjNameAndLinks">
+        <div class="subjName">
+            <h1>Web Technologies</h1>
+            <h4>Course Code : CSC336</h4>
+            
+            <h4>Teacher : Tahira Sadaf</h4>
+        </div>
+        <div class="subjLinks">
+            <ul class="links">
+                <li><div class="home active">
+                    <img src="./marksSummary.jpg" alt="" width="30px" height="30px" >
+                    <a href="./teacherEditMarks.html">Marks</a>
+                </div></li>
+                <li ><div class="home ">
+                    <img src="./anoucement.png" alt="" width="30px" height="30px" >
+                    <a href="./Annoucement.html">anoucement</a>
+                </div></li>
+                <li><div class="home">
+                    <img src="./details.jpg" alt="" width="30px" height="30px" >
+                    <a href="./SubjectDettails.html">Attendance</a>
+                </div></li>
+                 
+            </ul>
+        </div>
+    </div>
+    <div class="marks">
+        <div class="titleText">
+            <H1>Assignment</H1>
+        </div>
+        <div class="student-table">
+            <table id="students" style="width:93%; margin: 20px auto;">
+                <tr id="head">
+                  <th>Students</th>
+                  <th>Obained marks</th>
+                  <th>Total marks</th>
+                 
+                </tr>
+                <tr>
+                    <td>Zeeshan Ali</td>
+                    <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>
+                    <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>   
+                  </tr>
+                  <tr>
+                      <td>Afshan Afzal</td>
+                      <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>
+                      <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>   
+                    </tr>
+                
+               
+              </table>
+        </div>
+    </div>
+
+    <div class="marks">
+        <div class="titleText">
+            <H1>Lab Assignment</H1>
+        </div>
+        <div class="student-table">
+            <table id="students" style="width:93%; margin: 20px auto;">
+                <tr id="head">
+                  <th>students</th>
+                  <th>Obained marks</th>
+                  <th>Total marks</th>
+                 
+                </tr>
+                <tr>
+                  <td>Zeeshan Ali</td>
+                  <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>
+                  <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>   
+                </tr>
+                <tr>
+                    <td>Afshan Afzal</td>
+                    <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>
+                    <td><input type="number" name="" placeholder="marks" class="bottom-line"></td>   
+                  </tr>
+                
+               
+              </table>
+        </div>
+    </div>
+</body>
+</html>

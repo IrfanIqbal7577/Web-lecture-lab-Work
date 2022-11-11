@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-image: url("./images.jpg");
+    background-size: cover;
+}
+
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+
+.AppName {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 80px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: capitalize;
+}
+nav ul li button {
+ background: navy;
+ font-size: 20px;
+ padding: 5px;
+ border-radius: 10px;
+}
+#content{
+     background-image: url("./istock.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.para{
+    height: 300px;
+    width: 500px;
+    color: white;
+    padding: 60px;
+}
+.container{
+    background: gray;
+    /* display: flex; */
+}
+.container ul{
+    text-align: center;
+  
+
+}
+.container ul li{
+    display: inline;
+    line-height: 10px;
+    color: white;
+    margin: 20px;
+}
+.container ul li a{
+    text-decoration: none;
+    color: white;
+}
+.container p{
+    text-align: center;
+}
+.container p a{
+    font-size: 20px;
+    color: brown;
+    text-decoration: none;
+}

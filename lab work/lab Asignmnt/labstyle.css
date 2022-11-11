@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: montserrat;
+    background-image: url("./image 1.jpeg");
+    background-size: cover;
+}
+
+nav {
+    background: #0082e6;
+    height: 100px;
+    width: 100%;
+}
+
+.menu-bar {
+    background: black;
+    height: 50px;
+    border: 7px solid red;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.logo-title {
+    position: relative;
+    text-align: center;
+    color: white;
+    top: -100%;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.logo_design {
+    height: 100%;
+    width: 100px;
+    padding: 2px 2px;
+}
+
+.menu-bar ul {
+    text-align: center;
+    position: relative;
+    top: -30%;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    line-height: 80px;
+    text-align: center;
+}
+
+.menu-bar ul li ul {
+    display: none;
+}
+
+.menu-bar ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+    .menu-bar ul li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.register {
+    width: 400px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    margin: 5px auto 0px 450px;
+    color: #ffffff;
+}
+
+#register {
+    margin: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+    .register {
+        float: right;
+        display: block;
+        text-align: center;
+    }
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.name {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #ffffff;
+    box-shadow: inset 1px 1px 5px;
+}
+
+#submit {
+    width: 100px;
+    padding: 10Spx;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#footer {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    background: black;
+    padding: 50px 100px;
+}
+
+.row {
+    display: flex;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 5px;
+    font-weight: 300;
+}
